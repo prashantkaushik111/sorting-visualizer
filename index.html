@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <style>
+      body {
+        background-color: rgb(192,192,192);
+      }
+      .sort-heading {
+        color: blue;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 40px;
+      }
+      .box{
+        width: 10px;
+        background-color: red;
+        margin-left: 2px;
+      }
+      .box-collect {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+      }
+      .option-list {
+        display: flex;
+      }
+      .dropdown-style {
+        width: 200px;
+        height: 30px;
+        margin-right: 10px;
+      }
+      .label-style {
+        font-size: x-large;
+        color: black;
+        font-weight: bolder;
+      }
+      .align-centre {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+      }
+      .dropdown-align {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      option {
+        font-size: medium;
+      }
+      button {
+        width: 100px;
+        height: 30px;
+        font-size: medium;
+        background-color: aquamarine;
+      }
+     </style>
+</head>
+<body>
+  <div class="align-centre">
+    <span class="dropdown-align">
+      <div>
+        <label for="dense-ratio" class="label-style">Bar Density Value:</label>
+        <select id="dense-ratio" class="dropdown-style"> <option>Low(50-100)</option>
+          <option>Medium(101-200)</option>
+          <option>High(201-300)</option>
+        </select>
+      </div> 
+      <div>
+        <label for="algorithm" class="label-style">Algorithm:</label>
+        <select id="algorithm" class="dropdown-style"> <option>Bubble Sort</option>
+          <option>Insertion Sort</option>
+          <option>Merge Sort</option>
+        </select>
+      </div>
+      <div>
+        <button id="start-button"> Start</button>\
+        <button id="cancel-button"> Cancel</button>
+      </div>
+    </span>
+      <div id="box-collect" class="box-collect"></div>
+   </div>
+</body>
+</html>
